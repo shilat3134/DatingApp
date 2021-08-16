@@ -30,8 +30,8 @@ namespace API.Controllers
     public async Task<ActionResult<AppUser>> GetUser(int id)
     {
        //var user = _context.Users.FirstOrDefault(u => u.Id == id);
-       var user = await _context.Users.FindAsync(id);
-       return user;
+       return await _context.Users.FindAsync(id);
+       
     }
 
 
