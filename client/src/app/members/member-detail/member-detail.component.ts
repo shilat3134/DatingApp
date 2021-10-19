@@ -10,9 +10,9 @@ import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation } from '@kolkov
   styleUrls: ['./member-detail.component.css']
 })
 export class MemberDetailComponent implements OnInit {
-  member: Member | undefined;
-  galleryOptions: NgxGalleryOptions[] | undefined;
-  galleryImages: NgxGalleryImage[] | undefined;
+  member?: Member;
+  galleryOptions: NgxGalleryOptions[] = [];
+  galleryImages: NgxGalleryImage[] = [];
 
   constructor(private memberService: MembersService, private route: ActivatedRoute) { }
 
